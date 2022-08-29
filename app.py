@@ -9,7 +9,7 @@ Created on Wed Aug 17 10:23:51 2022
 
 from PIL import Image
 import streamlit as st
-image = Image.open('oimage.jpg')
+
 import cv2
 import pandas as pd
 
@@ -20,7 +20,7 @@ import numpy as np
 
 
 def run():
-    img_file = st.file_uploader("Choose an Image of Bird", type=["jpg", "png"])
+    img_file = st.file_uploader("Choose an Image", type=["jpg", "png"])
 
     if img_file is not None:
         st.image(img_file,use_column_width=False, width=1000)
