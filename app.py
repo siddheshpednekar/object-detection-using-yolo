@@ -102,7 +102,7 @@ def run():
 
 
         st.image('oimage.jpg', width=1000)
-        for i in range(len(indexes)):
+        for i in indexes:
             class_output.append(classes[class_ids[i]])
         df = pd.DataFrame({'classes':class_output})
 
